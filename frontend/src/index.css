@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-serif,
+.font-instrument {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-sans,
+.font-inter {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom patterned bar texture */
+.bar-texture {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 6px 6px;
+}
+
+/* Subtle glassmorphic & glow effects */
+.glow-pink {
+  box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.45), 0 8px 10px -6px rgba(236, 72, 153, 0.3);
+}
+
+.glow-blue {
+  box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
